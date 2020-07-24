@@ -87,6 +87,7 @@
 if(counts==undefined)
 {
     exit();
+
 }
             else{
                 console.log("Remote Participant count2=" + counts );
