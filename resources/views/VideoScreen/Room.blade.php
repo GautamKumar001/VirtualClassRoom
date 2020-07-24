@@ -86,8 +86,7 @@
    participant.on('trackAdded', function (track) {
 if(counts==undefined)
 {
-    exit();
-
+return;
 }
             else{
                 console.log("Remote Participant count2=" + counts );
