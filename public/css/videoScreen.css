@@ -19,17 +19,110 @@
     border: 2px salmon;
 }
 
-#video-div{
-    position: relative;
+
+#video-divone{
+    position: absolute;;
      height: 100px;
-     width: 933px;
+     width: 1033px;
       background-color: burlywood;
-       margin-top: 20px;
+       top:110px;
         border-radius: 6px;
-         left: 15px;
+         left: 200px;
+         box-shadow: 0 15px 80px 2px burlywood ;
+         margin-left: 10px;
+}
+#video-divtwo{
+    position: absolute;
+     height: 100px;
+     width: 1133px;
+      background-color: burlywood;
+      top: 120px;
+        border-radius: 6px;
+         left: 200px;
+         box-shadow: 0 15px 80px 2px burlywood ;
+         margin-left: 10px;
+}
+#video-divthree{
+    position: absolute;
+     height: 100px;
+     width: 1233px;
+      background-color: burlywood;
+      top: 230px;
+        border-radius: 6px;
+         left: 150px;
+         box-shadow: 0 15px 80px 2px burlywood ;
+         margin-left: 10px;
+}
+#video-divfour{
+    position: absolute;
+     height: 100px;
+     width: 1333px;
+      background-color: burlywood;
+      top: 340px;
+        border-radius: 6px;
+         left: 100px;
+         box-shadow: 0 15px 80px 2px burlywood ;
+         margin-left: 10px;
+}
+#video-divfive{
+    position: absolute;
+     height: 100px;
+     width: 1433px;
+      background-color: burlywood;
+      top: 450px;
+        border-radius: 6px;
+         left: 50px;
+         box-shadow: 0 15px 80px 2px burlywood ;
+         margin-left: 10px;
+}
+#video-divsix{
+    position: absolute;
+     height: 100px;
+     width: 1533px;
+      background-color: burlywood;
+       top: 560px;
+        border-radius: 6px;
+         left: 2px;
+         box-shadow: 0 15px 80px 2px burlywood ;
+         margin-left: 10px;
+}
+#video-divseven{
+    position: absolute;
+     height: 100px;
+     width: 1600px;
+      background-color: burlywood;
+      top: 670px;
+        border-radius: 6px;
+         left: 0px;
          box-shadow: 0 15px 80px 2px burlywood ;
          margin-left: 10px;
 }
 .video-id{
     height: 100px;width: 220px;
+}
+#videocontainer{
+    position: relative;
+    height: 100px;
+    width:130px;
+    left:40px;
+}
+#profile{
+    position: relative;
+    height:40px ;
+    width:40px ;
+    float: left;
+    left:-45px;
+    top:25px;
+    border-radius:50% ;
+    background-color: chartreuse;
+}
+#endcall{
+    position: relative;
+    height:40px ;
+    width:40px ;
+    float: right;
+    top:25px;
+    right: -42px;
+    border-radius:50% ;
+    background-color:rgb(222, 135, 164);
 }

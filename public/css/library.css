@@ -1,0 +1,18 @@
+.weekdays li{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border: 2px salmon;
+    background-color: seagreen;
+    font-size:12px;
+    margin: 10px;
+}
+ .days li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border: 2px salmon;
+    background-color: seagreen;
+    font-size:12px;
+    margin: 10px;
+  }

@@ -8,7 +8,12 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="backgrnd">
+        <img class="left" src="{{asset('../../figma/videochat1.png')}}" alt="image" >
+
+        </div>
 <div class="input">
+
     <form action="/Create" method="post">
         <span>Create a room</span>
         <input type="text" name="roomName" id="roomname">

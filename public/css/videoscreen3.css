@@ -1,0 +1,127 @@
+.room {
+    position: absolute;
+    height:500px;
+    width: 1000px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.teacher{
+    position:absolute;
+    left:10px;
+    top:-30px;
+}
+.teacher img{
+    position: absolute;
+    height:350px;
+    width: 350px;
+}
+.student{
+    position: absolute;
+    right: -400px;
+    top:-30px;
+}
+.student img{
+    position: absolute;
+    height:200px;
+    width: 200px;
+}
+
+.girl1{
+    position: relative;
+    left:10px;
+
+
+}
+.boy1 {
+    position: relative;
+    top:0px;
+    left:10px;
+
+}
+.girl2 {
+    position: relative;
+    left:10px;
+}
+
+.boy2 {
+    position: relative;
+    top:0px;
+    left:10px;
+}
+
+.girl3 {
+    position: relative;
+    left:10px;
+}
+.boy3{
+    position: relative;
+    top:0px;
+    left:10px
+
+}
+.girl4 {
+    position: relative;
+    left:10px;
+}
+.boy4 {
+    position: relative;
+    top:0px;
+    left:10px
+}
+
+.girl5 {
+    position: relative;
+    left:10px;
+}
+
+.boy5 {
+    position: relative;
+    top:0px;
+    left:10px;
+}
+
+
+img
+{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.row2 {
+    position: absolute;
+    display: inline-block;
+    width: 1400px;
+    left: 120px;
+    top:5px;
+}
+
+.row3 {
+    position: absolute;
+    display: inline-block;
+    width: 1800px;
+    left:-90px;
+    top:180px;
+}
+
+.row4 {
+    position: absolute;
+    display: inline-block;
+    width: 2400px;
+    left:-400px;
+    top:350px;
+}
+.row5 {
+    position: absolute;
+    display: inline-block;
+    width: 2400px;
+    left:-400px;
+
+    top:530px;
+}
+
+

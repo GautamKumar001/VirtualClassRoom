@@ -1,0 +1,5 @@
+php artisan make:migration add_profession_field_to_users_table --table=users
+<div class="backgrnd">
+        <img class="left" src="{{asset('../../figma/chatui1.png')}}" alt="image" >
+        <img class="right" src="{{asset('../../figma/chatui2.png')}}" alt="">
+        </div>

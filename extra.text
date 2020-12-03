@@ -1,0 +1,64 @@
+var male = @json($male);
+                        var female = @json($female);
+                        var partno = counts + 1
+                        var cname = ".girl" + partno;
+                        for (let index = 0; index < male.length; index++) {
+                            if (male[i] == participant.identity) {
+
+                                $(function () {
+            $(cname).attr('src', '{{asset('Images / vf5.png ')}}');
+
+                                    console.log('changed');
+
+                                });
+
+                            }
+                        }
+
+                        for (let index = 0; index < female.length; index++) {
+                            if (female[i] == participant.identity) {
+                                var cname = ".boy" + partno;
+                                $(function () {
+                     $(cname).attr('src', '{{asset('Images / vf5.png ')}}');
+                                    console.log('changed');
+                                })
+
+                            }
+
+                        }
+
+                    }
+
+
+
+                    var male = @json($male);
+                    var female = @json($female);
+                    var partno = counts + 1
+                    var cname = ".girl" + partno;
+                    for (let index = 0; index < male.length; index++) {
+                        if (male[i] == participant.identity) {
+
+                            $(function () {
+
+                                $(cname).attr('src', '{{asset(' Images / vf5.png ')}}');
+
+                                console.log('changed');
+
+                            })
+
+                        }
+                    }
+
+                    for (let index = 0; index < female.length; index++) {
+                        if (female[i] == participant.identity) {
+                            $(function () {
+                                var cname = ".boy" + partno;
+                                $(cname).attr('src', '{{asset('Images / vf5.png ')}}');
+
+                                console.log('changed');
+
+                            })
+
+                        }
+
+                    }

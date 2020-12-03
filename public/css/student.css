@@ -1,0 +1,18 @@
+input
+{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 5px;
+}
+.submitbtn{
+position: relative;
+height: 30px;
+width: 600px;
+border-radius: 10px;
+text-align: center;
+left:160px;
+background-color: darkcyan;
+}

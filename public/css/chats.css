@@ -1,0 +1,282 @@
+body{
+    background: white;
+}
+ ul{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    list-style: none;
+}
+.user-wrapper
+{
+    position: relative;
+    border-width: 2px ;
+    border-style: solid;
+    border-image:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 20;
+    overflow-y: auto;
+    height: 560px;
+    width: 200px;
+    top:98px;
+    left:1380px;
+    align-content: space-around;
+    border-radius: 20px;
+    display: none;
+
+}
+.message-wrapper
+{
+    position: absolute;
+    width: 350px;
+    height: 540px;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    border-image:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 20;
+    top:106px;
+    left:1014px;
+    overflow-y: auto;
+}
+
+input
+{
+    position: fixed;;
+    width: 375px;
+    padding: 12px 20px;
+    margin: 15px 0 0 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-image:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 20;
+    box-sizing: border-box;
+    outline:none;
+    border-radius:40px;
+    top:655px;
+    left:1014px;
+}
+input:focus
+{
+  border: 1px solid #aaaaaa;
+}
+
+.search input
+{
+    position: fixed;
+    top:655px;
+    left:1388px;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 204px;
+    border-image:linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82) 20;
+
+}
+.in
+{
+    display:block;
+}
+
+.user{
+    cursor: pointer;
+    position: relative;
+    margin:5px;
+
+}
+.user:hover
+{
+    background: #eeeeee;
+
+}
+.user:last-child
+{
+    margin-bottom: 0;
+}
+.pending{
+    position: absolute;;
+    left: 10px;
+    top:9px;
+    background: #b600ff;
+    margin: 0;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0px;
+    color: #ffffff;
+    font-size: 12px;
+}
+.status{
+    position: absolute;;
+    left: 60px;
+    top:9px;
+    background:#00FF00;
+    margin: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    padding: 0px;
+    color: #ffffff;
+}
+.media-left{
+    margin: 0 10px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: cadetblue;
+
+}
+ .media-left img{
+     width: 64px;
+     border-radius: 64px;
+ }
+
+ .media-body p{
+     margin: 6px 0;
+ }
+
+ .message-wrapper{
+     padding: 10px;
+     background: #eeeeee;
+
+ }
+ .messages .message{
+     margin-bottom: 15px;
+ }
+.messages .message:last-child
+{
+  margin-bottom: 0;
+}
+
+.recieved
+{
+    position: relative;
+    left:10px;
+      background:#E5E5EA;
+      color:black;
+      align-self: flex-end;
+}
+.recieved::before
+{
+    left:-7px;
+    border-left:20px solid #E5E5EA;
+    border-bottom-right-radius: 16px 14px;
+    transform:translate(0, -2px);
+}
+.recieved::after
+{
+    left:4px;
+    width:26px;
+    background:white;
+    border-bottom-right-radius: 10px;
+    transform:translate(-30px, -2px);
+}
+  .sent
+{
+    position: relative;
+    left: 50px;
+      color:white;
+      background:#0B93F6;
+      align-self: flex-end;
+}
+.sent::before
+{
+    right:-7px;
+    border-right:20px solid #0B93F6;
+    border-bottom-left-radius: 16px 14px;
+    transform:translate(0, -2px);
+}
+.sent::after{
+    right:-56px;
+    width:26px;
+    background:white;
+    border-bottom-left-radius: 10px;
+    transform:translate(-30px, -2px);
+}
+
+
+#p {
+    max-width: 255px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+    position:relative;
+      padding:10px 20px;
+    border-radius:25px;
+}
+    #p:before
+    {
+        content:"";
+        position:absolute;
+    bottom:-2px;
+    height:20px;
+    }
+
+
+
+    #p:after {
+      content:"";
+          position:absolute;
+      bottom:-2px;
+      height:20px;
+      background-color:  #eeeeee;
+    }
+
+.recieved1
+{
+    width: 45%;
+    padding: 3px 10px;
+    border-radius:10px;
+}
+  .sent1
+{
+    width: 45%;
+    padding: 3px 10px;
+    border-radius:10px;
+}
+.recieved1
+{
+    background: #ffffff;
+}
+.sent1{
+    background: #3bebff;
+    float: right;
+    text-align: right;
+}
+.message p1{
+    margin:5px 0;
+}
+.media-left{
+    color: #777777;
+    font-size: 12px;
+}
+.active
+{
+    background: #eeeeee;
+}
+
+.messenger
+{
+    position: fixed;
+    border-radius: 50%;
+    bottom:0px;
+    right: 600px;
+}
+.fa
+{
+   height:100px;
+   width: 100px;
+   border-radius: 50%;
+}
+.left{
+    position: absolute;
+left:5px;
+height: 100%;
+width: 50%;
+top:0px;
+}
+.right{
+    position: absolute;
+    right: 5px;
+    height: 100%;
+width: 50%;
+top:0px
+}

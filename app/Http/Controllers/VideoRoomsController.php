@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\TeacherModel;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
@@ -11,6 +12,7 @@ use Twilio\Rest\Client;
 use Twilio\Jwt\AccessToken;
 use Twilio\Jwt\Grants\VideoGrant;
 use App\Http\Controllers\Exception;
+use App\StudentModel;
 
 class VideoRoomsController extends Controller
 {
@@ -25,22 +27,37 @@ class VideoRoomsController extends Controller
         $this->key = config('services.twilio.key');
         $this->secret = config('services.twilio.secret');
     }
-    public function clientUi()
+    public function TeacherUi()
     {
         $rooms = [];
         try {
             $client = new Client($this->sid, $this->token);
             echo('client created');
-            $allRooms = $client->video->rooms->read([]);
-
+            $allRooms = $client->video->rooms->read(["status" => "in-progress"]);
             $rooms = array_map(function ($room) {
                 return $room->uniqueName;
             }, $allRooms);
         } catch (Exception $e) {
             echo "Error: " . $e->getMessage();
         }
-        //dd($allRooms);
-        return view('VideoScreen.videoScreen', ['rooms' => $rooms]);
+        //dd($rooms);
+        return view('VideoScreen.TeacherScreen', ['rooms' => $rooms]);
+    }
+    public function studentUi()
+    {
+        $rooms = [];
+        try {
+            $client = new Client($this->sid, $this->token);
+            echo('client created');
+            $allRooms = $client->video->rooms->read(["status" => "in-progress"]);
+            $rooms = array_map(function ($room) {
+                return $room->uniqueName;
+            }, $allRooms);
+        } catch (Exception $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        //dd($rooms);
+        return view('VideoScreen.StudentScreen', ['rooms' => $rooms]);
     }
     public function createRoom(Request $request)
     {
@@ -61,13 +78,16 @@ class VideoRoomsController extends Controller
         //dd($request->roomName);
 
         return redirect()->action('VideoRoomsController@joinRoom', [
-             'roomName' => $request->roomName
-         ]);
+            'roomName' => $request->roomName
+        ]);
     }
     public function joinRoom($roomName)
     {
         // A unique identifier for this user
-        $identity = Auth::user()->name;
+        $identity = Auth::user()->email;
+        $teacheremail=TeacherModel::all()->pluck('email');
+        $male=StudentModel::where('gender', 'male')->pluck('email');
+        $female=StudentModel::where('gender', 'female')->pluck('email');
 
         \Log::debug("joined with identity: $identity");
         $token = new AccessToken($this->sid, $this->key, $this->secret, 3600, $identity);
@@ -77,6 +97,13 @@ class VideoRoomsController extends Controller
 
         $token->addGrant($videoGrant);
 
-        return view('VideoScreen.Room', [ 'accessToken' => $token->toJWT(), 'roomName' => $roomName ]);
+        return view('VideoScreen.Room', ['accessToken' => $token->toJWT(), 'roomName' => $roomName,'teacheremail'=>$teacheremail,'male'=>$male,'female'=>$female]);
+    }
+    public function roomArch()
+    {
+        //$male=StudentModel::where('gender', 'male')->pluck('email');
+        //$female=StudentModel::where('gender', 'female')->pluck('email');
+        //dd($male);
+        return view('VideoScreen.Roomarch');
     }
 }

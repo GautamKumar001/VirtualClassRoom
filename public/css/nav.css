@@ -1,0 +1,23 @@
+.navigation{
+position: relative;
+height: 30px;
+width: 100%;
+background-color: darkgray;
+
+}
+.teacher{
+position: relative;
+height: 30px;
+width: 100px;
+background-color: darkturquoise;
+margin: 20px;
+align-self: center;
+}
+.student{
+position: relative;
+height: 30px;
+width: 100px;
+background-color:darkturquoise;
+margin: 20px;
+align-self: center;
+}

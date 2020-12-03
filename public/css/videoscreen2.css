@@ -1,0 +1,244 @@
+.room {
+    position: absolute;
+    height:500px;
+    width: 1000px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.teacher{
+    position:absolute;
+    left:10px;
+    top:-10px;
+}
+.teacher img{
+    position: absolute;
+    height:350px;
+    width: 350px;
+}
+.student{
+    position: absolute;
+    right: -270px;
+    top:-10px;
+}
+.student img{
+    position: absolute;
+    height:200px;
+    width: 200px;
+}
+
+.girl1{
+    position: absolute;
+    left:100px;
+
+
+}
+.boy1 {
+    position: absolute;
+    top:0px;
+    left:260px;
+
+}
+.girl2 {
+    position: absolute;
+    left:420px;
+}
+
+.boy2 {
+    position: absolute;
+    top:0px;
+    left:580px;
+}
+
+.girl3 {
+    position: absolute;
+    left:740px;
+}
+.boy3{
+    position: absolute;
+    top:0px;
+    left:900px
+
+}
+.girl4 {
+    position: absolute;
+    left:100px;
+}
+.boy4 {
+    position: absolute;
+    top:0px;
+    left:260px
+}
+
+.girl5 {
+    position: absolute;
+    left:420px;
+}
+
+.boy5 {
+    position: absolute;
+    top:0px;
+    left:580px;
+}
+.girl6 {
+    position: absolute;
+    left:740px;
+}
+
+.boy6 {
+    position: absolute;
+    left:900px;
+}
+.girl7 {
+    position: absolute;
+    left:1060px;
+}
+
+.boy7 {
+    position: absolute;
+    left:1220px;
+}
+
+.girl8 {
+    position: absolute;
+    left:100px;
+}
+
+.boy8 {
+    position: absolute;
+    left:260px;
+}
+
+.girl9 {
+    position: absolute;
+    left:420px;
+}
+
+.boy9 {
+    position: absolute;
+    left:580px;
+}
+
+.girl10 {
+    position: absolute;
+    left:740px;
+}
+
+.boy10 {
+    position: absolute;
+    left:900px;
+}
+
+.girl11 {
+    position: absolute;
+    left:1060px;
+}
+
+.boy11 {
+    position: absolute;
+    left:1220px;
+}
+
+.girl12 {
+    position: absolute;
+    left:1380px;
+}
+
+.boy12 {
+    position: absolute;
+    left:1540px;
+}
+
+.girl13 {
+    position: absolute;
+    left:100px;
+}
+
+.boy13 {
+    position: absolute;
+    left:260px;
+}
+
+.girl14 {
+    position: absolute;
+    left:420px;
+}
+
+.boy14 {
+    position: absolute;
+    left:580px;
+}
+
+.girl15 {
+    position: absolute;
+    left:740px;
+}
+
+.boy15 {
+    position: absolute;
+    left:900px;
+}
+
+.girl16 {
+    position: absolute;
+    left:1060px;
+}
+
+.boy16 {
+    position: absolute;
+    left:1220px;
+}
+
+.girl17 {
+    position: absolute;
+    left:1380px;
+}
+
+.boy17 {
+    position: absolute;
+    left:1540px;
+}
+
+img
+{
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.row2 {
+    position: absolute;
+    display: inline-block;
+    width: 1400px;
+    left: 210px;
+    top:5px;
+}
+
+.row3 {
+    position: absolute;
+    display: inline-block;
+    width: 1800px;
+    left:80px;
+    top:180px;
+}
+
+.row4 {
+    position: absolute;
+    display: inline-block;
+    width: 2400px;
+    left:-100px;
+    top:350px;
+}
+.row5 {
+    position: absolute;
+    display: inline-block;
+    width: 2400px;
+    left:-100px;
+
+    top:530px;
+}
+
+
